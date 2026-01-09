@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soldier & Equipment Registration</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #2f3e2f;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #f4f6f4;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        text-align: center;
+        color: #2f3e2f;
+        margin-bottom: 30px;
+      }
+
+      fieldset {
+        border: 2px solid #070101;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 6px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #2f3e2f;
+        padding: 0 10px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        width: 200px;
+        font-weight: bold;
+        color: #333;
+        padding-top: 6px;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        flex: 1;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #aaa;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+        height: 80px;
+      }
+
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      button {
+        background-color: #2f3e2f;
+        color: #fff;
+        padding: 10px 25px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      button:hover {
+        background-color: #4a5d4a;
+      }
+
+      @media (max-width: 600px) {
+        .form-group {
+          flex-direction: column;
+        }
+
+        .form-group label {
+          width: 100%;
+          margin-bottom: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Soldier & Equipment Registration</h1>
+
+      <form action="https://google.com">
+        <fieldset>
+          <legend>Soldier Information</legend>
+
+          <div class="form-group">
+            <label>Soldier ID</label>
+            <input type="text" value="SOL-10234" required />
+          </div>
+
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" value="John Michael Carter" required />
+          </div>
+
+          <div class="form-group">
+            <label>Rank</label>
+            <select>
+              <option>Private</option>
+              <option>Corporal</option>
+              <option selected>Sergeant</option>
+              <option>Lieutenant</option>
+              <option>Captain</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Unit</label>
+            <input type="text" value="Alpha Recon Unit" />
+          </div>
+
+          <div class="form-group">
+            <label>Date of Enlistment</label>
+            <input type="date" value="2019-06-15" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Equipment Information</legend>
+
+          <div class="form-group">
+            <label>Equipment ID</label>
+            <input type="text" value="EQ-77891" required />
+          </div>
+
+          <div class="form-group">
+            <label>Equipment Type</label>
+            <select>
+              <option selected>Weapon</option>
+              <option>Vehicle</option>
+              <option>Communication Gear</option>
+              <option>Protective Gear</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Model / Serial No.</label>
+            <input type="text" value="M4A1-556-XY92" />
+          </div>
+
+          <div class="form-group">
+            <label>Issue Date</label>
+            <input type="date" value="2023-02-10" />
+          </div>
+
+          <div class="form-group">
+            <label>Condition</label>
+            <select>
+              <option>Excellent</option>
+              <option selected>Good</option>
+              <option>Fair</option>
+              <option>Damaged</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Remarks</label>
+            <textarea>
+Standard issue rifle. Recently serviced and fully operational.
+            </textarea>
+          </div>
+        </fieldset>
+
+        <div class="buttons">
+          <button type="submit">Register</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
