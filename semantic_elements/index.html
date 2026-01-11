@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic HTML Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f0f2f5;
+    }
+
+    /* Header */
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    /* Navigation */
+    nav {
+      background: #334155;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    /* Main layout */
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Content */
+    section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+
+    article {
+      margin-top: 1rem;
+    }
+
+    article header {
+      background: none;
+      color: black;
+      padding: 0;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    figure {
+      margin: 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+
+    /* Sidebar */
+    aside {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #93c5fd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Semantic Website</h1>
+    <p>A simple example using HTML5 semantic elements</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#articles">Articles</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main id="home">
+
+    <section id="articles">
+      <h2>Articles</h2>
+
+      <article>
+        <header>
+          <h3>Learning Semantic HTML</h3>
+          <p>Published on <time datetime="2026-01-09">January 9, 2026</time></p>
+        </header>
+
+        <p>
+          Semantic HTML makes your website more
+          <mark>accessible</mark> and meaningful.
+        </p>
+
+        <figure>
+          <img src="https://via.placeholder.com/600x300" alt="Example image">
+          <figcaption>An example figure with a caption</figcaption>
+        </figure>
+
+        <details>
+          <summary>Why use semantic elements?</summary>
+          <p>They improve accessibility, SEO, and code readability.</p>
+        </details>
+
+        <footer>
+          <address>
+            Written by <a href="mailto:author@example.com">John Doe</a>
+          </address>
+        </footer>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>This is related content shown in an aside.</p>
+    </aside>
+
+  </main>
+
+  <footer id="about">
+    <p>&copy; 2026 My Semantic Website</p>
+    <address>
+      Contact us at <a href="mailto:info@example.com">info@example.com</a>
+    </address>
+  </footer>
+
+</body>
+</html>

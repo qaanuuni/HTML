@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  id="root"
+  class="page"
+  title="Root HTML Element"
+  style="background-color: #f9f9f9;"
+  tabindex="0"
+  accesskey="h"
+  data-app="demo"
+  role="document"
+>
+<head>
+  <meta charset="UTF-8">
+  <title>Global Attributes Demo</title>
+</head>
+
+<body
+  id="body"
+  class="main-body"
+  title="Body Element"
+  style="font-family: Arial;"
+  contenteditable="false"
+  spellcheck="true"
+  data-section="main"
+  role="main"
+>
+
+  <header
+    id="header"
+    class="site-header"
+    title="Header"
+    style="border-bottom: 1px solid #ccc;"
+    tabindex="1"
+    draggable="true"
+    data-type="header"
+    role="banner"
+  >
+    <h1
+      id="title"
+      class="page-title"
+      title="Main Title"
+      style="color: navy;"
+      tabindex="2"
+      contenteditable="true"
+      spellcheck="true"
+      data-editable="yes"
+      role="heading"
+      aria-level="1"
+    >
+      Global Attributes Example
+    </h1>
+  </header>
+
+  <nav
+    id="nav"
+    class="navigation"
+    title="Navigation"
+    style="margin: 10px 0;"
+    tabindex="3"
+    data-nav="primary"
+    role="navigation"
+  >
+    <a
+      href="#"
+      id="link"
+      class="nav-link"
+      title="Home Link"
+      style="text-decoration: none;"
+      tabindex="4"
+      accesskey="1"
+      draggable="false"
+      data-link="home"
+      role="link"
+      aria-label="Home"
+    >
+      Home
+    </a>
+  </nav>
+
+  <section
+    id="section"
+    class="content"
+    title="Content Section"
+    style="padding: 10px;"
+    tabindex="5"
+    contenteditable="true"
+    data-section="content"
+    role="region"
+    aria-labelledby="title"
+  >
+    <p
+      id="paragraph"
+      class="text"
+      title="Paragraph"
+      style="color: #333;"
+      tabindex="6"
+      spellcheck="true"
+      data-text="example"
+      role="paragraph"
+    >
+      This paragraph demonstrates global attributes.
+    </p>
+
+    <button
+      id="button"
+      class="btn"
+      title="Click Me"
+      style="padding: 5px 10px;"
+      tabindex="7"
+      accesskey="b"
+      data-action="submit"
+      role="button"
+      aria-pressed="false"
+    >
+      Click Me
+    </button>
+  </section>
+
+  <footer
+    id="footer"
+    class="site-footer"
+    title="Footer"
+    style="margin-top: 20px;"
+    tabindex="8"
+    hidden="false"
+    data-footer="true"
+    role="contentinfo"
+  >
+    © 2026 Example
+  </footer>
+
+</body>
+</html>
